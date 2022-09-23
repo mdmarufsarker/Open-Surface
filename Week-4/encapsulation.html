@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // The process of wrapping properties and functions within a single unit is known as encapsulation.
+      //encapsulation example
+      class Person {
+        constructor(name, id) {
+          this.name = name;
+          this.id = id;
+        }
+        
+        add_Address(add) {
+          this.add = add;
+        }
+        getDetails() {
+          console.log(`Name is ${this.name},Address is: ${this.add}`);
+        }
+      }
+
+      let person1 = new Person("Mukul", 21);
+      person1.add_Address("Delhi");
+      person1.getDetails();
+    </script>
+  </body>
+</html>
+
+<!-- 
+In the above example we simply create a person Object using the constructor and Initialize its properties and use its functions. We are not bothered with the implementation details. We are working with an Object’s interface without considering the implementation details. 
+
+Sometimes encapsulation refers to the hiding of data or data Abstraction which means representing essential features hiding the background detail. 
+
+Most of the OOP languages provide access modifiers to restrict the scope of a variable, but their are no such access modifiers in JavaScript but there are certain ways by which we can restrict the scope of variables within the Class/Object.  -->

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      //using a constructor
+      function Person(first_name, last_name) {
+        this.first_name = first_name;
+        this.last_name = last_name;
+      }
+      
+      //creating new instances of person object
+      let person1 = new Person("Mukul", "Latiyan");
+      let person2 = new Person("Rahul", "Avasthi");
+
+      console.log(person1.first_name);
+      console.log(`${person2.first_name} ${person2.last_name}`);
+    </script>
+  </body>
+</html>

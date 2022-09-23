@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // Object.create() example a
+      // simple object with some properties
+      const coder = {
+        isStudying: false,
+        printIntroduction: function () {
+          console.log(`My name is ${this.name}. Am I
+		studying?: ${this.isStudying}.`);
+        },
+      };
+      // Object.create() method
+      const me = Object.create(coder);
+
+      // "name" is a property set on "me", but not on "coder"
+      me.name = "Mukul";
+
+      // Inherited properties can be overwritten
+      me.isStudying = true;
+
+      me.printIntroduction();
+    </script>
+  </body>
+</html>

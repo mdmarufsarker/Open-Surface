@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // Abstraction example
+      function person(fname, lname) {
+        let firstname = fname;
+        let lastname = lname;
+
+        let getDetails_noaccess = function () {
+          return `First name is: ${firstname} Last
+			name is: ${lastname}`;
+        };
+
+        this.getDetails_access = function () {
+          return `First name is: ${firstname}, Last
+			name is: ${lastname}`;
+        };
+      }
+      let person1 = new person("Mukul", "Latiyan");
+      console.log(person1.firstname);
+      console.log(person1.getDetails_noaccess);
+      console.log(person1.getDetails_access());
+    </script>
+  </body>
+</html>
+
+<!-- In the above example we try to access some property(person1.firstname) and functions(person1.getDetails_noaccess) but it returns undefined while their is a method which we can access from the person object(person1.getDetails_access()). By changing the way we define a function we can restrict its scope. -->

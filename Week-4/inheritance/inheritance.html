@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      //Inheritance example
+      class person {
+        constructor(name) {
+          this.name = name;
+        }
+        //method to return the string
+        toString() {
+          return `Name of person: ${this.name}`;
+        }
+      }
+      class student extends person {
+        constructor(name, id) {
+          //super keyword for calling the above class constructor
+          super(name);
+          this.id = id;
+        }
+        toString() {
+          return `${super.toString()},Student ID: ${this.id}`;
+        }
+      }
+      let student1 = new student("Mukul", 22);
+      console.log(student1.toString());
+    </script>
+  </body>
+</html>
+
+
+<!-- 
+In the above example, we define an Person Object with certain properties and methods and then we inherit the Person Object in the Student Object and use all the properties and methods of the person Object as well as define certain properties and methods for the Student Object. 
+
+Note: The Person and Student object both have same method (i.e toString()), this is called Method Overriding. Method Overriding allows a method in a child class to have the same name and method signature as that of a parent class. 
+
+In the above code, the super keyword is used to refer to the immediate parent class’s instance variable.  
+-->

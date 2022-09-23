@@ -1,0 +1,8 @@
+As JavaScript is widely used in Web Development, in this article we will explore some of the Object Oriented mechanisms supported by JavaScript to get the most out of it. Some of the common interview questions in JavaScript on OOPS include,- “How is Object-Oriented Programming implemented in JavaScript? How does it differ from other languages? Can you implement Inheritance in JavaScript” and so on…
+
+There are certain features or mechanisms which makes a Language Object-Oriented like: 
+
+Object
+Classes
+Encapsulation
+Inheritance

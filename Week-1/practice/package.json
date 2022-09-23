@@ -1,0 +1,30 @@
+{
+  "name": "project-setup",
+  "version": "1.0.0",
+  "description": "TypeScript for beginners",
+  "main": "app.ts",
+  "scripts": {
+    "start": "tsc obj.ts",
+    "dev": "nodemon obj.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mdmarufsarker/typescript.git"
+  },
+  "keywords": [
+    "html",
+    "css",
+    "javascript",
+    "typescript"
+  ],
+  "author": "Md. Maruf Sarker",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mdmarufsarker/typescript/issues"
+  },
+  "homepage": "https://github.com/mdmarufsarker/typescript#readme",
+  "devDependencies": {
+    "live-server": "^1.2.2",
+    "nodemon": "^2.0.19"
+  }
+}

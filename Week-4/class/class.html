@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // Defining class using es6
+      class Vehicle {
+        constructor(name, maker, engine) {
+          this.name = name;
+          this.maker = maker;
+          this.engine = engine;
+        }
+        getDetails() {
+          return `The name of the bike is ${this.name}.`;
+        }
+      }
+      // Making object with the help of the constructor
+      let bike1 = new Vehicle("Hayabusa", "Suzuki", "1340cc");
+      let bike2 = new Vehicle("Ninja", "Kawasaki", "998cc");
+
+      console.log(bike1.name); // Hayabusa
+      console.log(bike2.maker); // Kawasaki
+      console.log(bike1.getDetails());
+    </script>
+  </body>
+</html>
