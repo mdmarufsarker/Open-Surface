@@ -20,19 +20,12 @@ int main(){
 
     int r = n5 / a;
 
-    // calculate the prime number from 1 to 100
-    for(int i = 2; i <= 100; i++){
-        int count = 0;
-        for(int j = 1; j <= i; j++){
-            if(i % j == 0){
-                count++;
-            }
-            if((j ^ 4) == r) r = j;
+    for(int i = 2; i <= 100; i++)
+        if(r == i ^ 4){
+            r = i;
+            break;
         }
-        if(count == 2)
-            if((2 ^ 4) == r) r = 2;
-    }
-
+    
     int x, y, z;
     x = a * r;
     y = a * r * r;
